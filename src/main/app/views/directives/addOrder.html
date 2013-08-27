@@ -27,7 +27,7 @@
 						</select-->
 
 						<input type="text" ng-model="item.type" class="span2"
-						typeahead="t as t.name for t in itemTypes | filter:$viewValue | limitTo:8" >
+						typeahead="t.name for t in itemTypes | filter:$viewValue | limitTo:8" >
 			 		</td>
 			 		<td>
 						<select class="span2" ng-model="item.lady" 
@@ -38,7 +38,7 @@
 			 		<td>
 			 			<div class="input-prepend">
 			 				<span class="add-on">&#8369;</span>
-							<input class="span1" type="text" ng-model="item.type.price" />			  
+							<input class="span1" type="text" ng-model="item.type.price" ng-change="calculateAmount(item);"/>			  
 						</div>
 					</td>
 			 		<td>
@@ -67,7 +67,7 @@
 		 		<tr>
 		 			<td colspan="6">
 		 				<button class="btn btn-small btn-success pull-right" 
-		 						ng-click="addItem()">
+		 						ng-click="addItem();">
 		 					<i class="icon-plus"></i> Item
 		 				</button>
 		 			</td>	 			

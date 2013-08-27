@@ -22,7 +22,11 @@ angular.module('cmsApp')
   			     qty: "1", 
   			     amount: "40"};
 
-  	$scope.order.items = [item];  	
+  	$scope.order.items = [item];
+
+    $scope.calculateAmount = function (itm) {
+      itm.amount = itm.type.price * itm.qty;
+    };   	
 
   	$scope.addItem = function () {
   		var itm = { type: $scope.itemTypes[0],  					
@@ -38,10 +42,10 @@ angular.module('cmsApp')
 
   	$scope.addOrder = function () {
 	   dialog.close($scope.order);
-	};
+	  };
     
     $scope.close = function () {
-	   dialog.close();
-	};
+	     dialog.close();
+	  };
 
   });

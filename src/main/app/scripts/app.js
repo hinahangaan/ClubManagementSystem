@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('cmsApp', ['ui','ui.bootstrap'])
+angular.module('cmsApp', ['ngRoute','ui','ui.bootstrap'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
