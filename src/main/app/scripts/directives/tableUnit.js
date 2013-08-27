@@ -12,8 +12,10 @@ angular.module('cmsApp')
 
         $scope.opts = {
           backdrop: true,
-          keyboard: true,
-          backdropClick: true,
+          keyboard: true, 
+          backdropClick: false,
+          //dialogFade: true, 
+          //backdropFade: true,                      
           templateUrl: 'views/directives/addOrder.html',
           controller: 'AddorderCtrl',
           tableName: $scope.table.name
@@ -25,8 +27,9 @@ angular.module('cmsApp')
           d.open().then( function(order) {
             if(order)
             {
-              console.log(order.items);
-              console.log(order.waiter);
+              angular.forEach(order.items, function(itm){
+                $scope.table.currentCustomer.bill += itm.amount;       
+              });  
             }
           });
 
