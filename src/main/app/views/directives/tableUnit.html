@@ -1,0 +1,20 @@
+<div class="table-container vacant-{{table.vacant}} {{table.type}}" id="{{table.name}}">
+		
+	<div class="name">{{table.name}}
+		<button class="btn btn-inverse btn-small pull-right">
+			<i class="icon-info-sign icon-white"></i>
+		</button>
+	</div>	
+	<div class="bill">{{table.bill}}</div>		
+	<div class="waiter">{{table.waiter}}</div>	
+
+	<div class="options">				
+		<button class="btn btn-success btn-small" ng-click="openAddOrder()">
+			<i class="icon-plus"></i> Order
+		</button>
+		<button class="btn btn-primary btn-small pull-right">
+			<i class="icon-check"></i> Payment
+		</button>	
+	</div>	
+
+</div>

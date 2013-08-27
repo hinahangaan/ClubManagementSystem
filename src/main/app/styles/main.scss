@@ -1,0 +1,149 @@
+$iconSpritePath: "../images/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+
+@import "bootstrap-sass/lib/bootstrap";
+
+/* Put your CSS here */
+html, body {
+  margin: 20px;
+}
+
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.hero-unit {
+    margin: 50px auto 0 auto;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 60px;
+}
+
+.hero-unit h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+/*Custom*/
+.table-container{
+    border:1px solid black;
+    margin: 20px;
+    border-radius: 4px;
+    height: 160px;
+    width: 200px;
+    float: left;
+    overflow: hidden;
+}
+
+.table-container.vacant-true{
+    background-color: gray;     
+}
+
+.table-container.vacant-true .name{
+    color: darkgray;     
+}
+
+.table-container.vacant-false{
+    background-color: white;  
+}
+
+.table-container.vip .name{
+    background-color: darkgreen;
+}
+
+.table-container .name{  
+    font-size: 4em;
+    font-weight: bold;
+    padding-top: 20px;  
+    height: 40px;    
+    text-align: center;
+    border-bottom: 1px solid black; 
+    background-color: gray;
+    color: white;
+}
+
+.table-container .name button{
+    margin-right: 10px;
+    margin-top: -10px;
+}
+
+.table-container .bill{
+    height: 30px;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 10px;
+    //border-bottom: 1px dotted darkgray;   
+}
+
+.table-container .waiter{
+    height: 20px;
+    text-align: center;
+    font-size: 1em;
+    padding-top: 0px; 
+    font-weight: bold; 
+    background: slategray;
+    color: white; 
+}
+
+.table-container .options{ 
+    height: 30px;
+    width: 190px;
+    padding: 5px;   
+}
+
+.table-container .options button{  
+    margin: 5px;
+    margin-top: 0px;
+}
+
+#table-list{
+    border:1px solid black;
+    width: 970px;
+    float: left;
+    border-radius: 4px;
+}
+
+#vip-list{
+    width: 245px;
+    float: left;
+    border:1px solid black;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+/*Add Order Form*/
+
+.modal {
+    width: auto;    
+}
+
+.modal-body {
+    overflow-x: hidden;   
+}
+
+.inline-label label{
+    float: left;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.inline-label{
+    float: left;
+    width: 200px; 
+    margin: 0px; 
+}
+
+table tbody tr .input-prepend, table tbody tr select {
+    margin-bottom: 0;
+}
+
+
+

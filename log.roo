@@ -1,0 +1,13 @@
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-08-24 20:06:16
+project --topLevelPackage com.clubmanagementsystem.app --projectName ClubManagementSystem --java 7 --packaging JAR
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-08-24 20:06:35
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-08-24 20:06:40
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-08-24 20:08:59
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-08-24 21:47:23
+mongo setup --host localhost
+web mvc json setup
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-08-25 10:52:34
+web mvc json setup
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-08-25 11:24:38
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-08-27 14:14:35
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-08-27 14:18:50
