@@ -141,8 +141,8 @@ body {
     margin: 0px; 
 }
 
-table tbody tr .input-prepend, table tbody tr select {
-    margin-bottom: 0;
+table tbody tr .input-prepend, table tbody tr select, table tbody tr input {
+    margin-bottom: 0 !important;
 }
 
 

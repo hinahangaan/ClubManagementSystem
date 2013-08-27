@@ -39,5 +39,6 @@ describe('Controller: AddorderCtrl', function () {
     scope.removeItem(1);
     expect(scope.order.items.length).toBe(initialItemCount);
   });
+
  
 });
