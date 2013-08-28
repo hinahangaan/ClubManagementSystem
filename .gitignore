@@ -214,19 +214,7 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 /target
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-/log.*
 /log.roo
 /**/*.roo
 /**/*.aj
-=======
-/log.roo
->>>>>>> origin/back-end
-=======
-/log.roo
->>>>>>> origin/back-end
-=======
-/log.roo
->>>>>>> dgds
+
