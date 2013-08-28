@@ -216,6 +216,7 @@ pip-log.txt
 /target
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /log.*
 /log.roo
 /**/*.roo
@@ -226,3 +227,6 @@ pip-log.txt
 =======
 /log.roo
 >>>>>>> origin/back-end
+=======
+/log.roo
+>>>>>>> dgds
