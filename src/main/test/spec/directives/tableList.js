@@ -3,7 +3,7 @@
 describe('Directive: tableList', function () {
 
   // load the directive's module
-  beforeEach(module('cmsApp'));
+  beforeEach(module('cmsAppDev'));
 
   // load templates
   beforeEach(module('views/directives/tableList.html','views/directives/tableUnit.html'));
@@ -12,7 +12,8 @@ describe('Directive: tableList', function () {
     scope;
 
   beforeEach(inject(function ($rootScope, $compile) {
-    scope = $rootScope.$new();
+    
+    scope = $rootScope.$new();    
 
     scope.tables = [
       { name: 'T-1'},
@@ -23,12 +24,14 @@ describe('Directive: tableList', function () {
 
     element = angular.element('<table-list></table-list>'); 
     element = $compile(element)(scope);
-    scope.$apply();  
-
+    scope.$apply(); 
+    
   }));
 
   it('should have a list of tables', function () {
+     
       expect(element.find('#table-list table-unit').size()).toBe(scope.tables.length);
+     
   });
 
   

@@ -3,7 +3,7 @@
 describe('Directive: tableUnit', function () {
 
   // load the directive's module
-  beforeEach(module('cmsApp'));
+  beforeEach(module('cmsAppDev'));
 
   // load templates
   beforeEach(module('views/directives/tableUnit.html'));

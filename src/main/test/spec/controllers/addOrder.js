@@ -3,7 +3,7 @@
 describe('Controller: AddorderCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('cmsApp'));
+  beforeEach(module('cmsAppDev'));
 
   var AddorderCtrl,
     scope;

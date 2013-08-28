@@ -2,11 +2,12 @@
 
 angular.module('cmsApp')
   .directive('tableList', function () {
-    return {
-      //template: '<div></div>',
+    return {   
       templateUrl: 'views/directives/tableList.html',      
       restrict: 'E',
-      controller: function ($scope, $element, $attrs) {
+      controller: function ($scope, $element, $attrs, tableRepo) {
+     
+        tableRepo.query();
 
         $scope.tables = [];
 
