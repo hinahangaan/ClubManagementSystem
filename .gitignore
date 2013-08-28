@@ -214,6 +214,7 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 /target
+/log.*
 /log.roo
-*.roo
-*.aj
+/**/*.roo
+/**/*.aj
