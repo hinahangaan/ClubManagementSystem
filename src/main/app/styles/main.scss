@@ -121,7 +121,8 @@ body {
 /*Add Order Form*/
 
 .modal {
-    width: auto;    
+    width: 750px; 
+    margin-left: -375px;   
 }
 
 .modal-body {
@@ -141,8 +142,12 @@ body {
     margin: 0px; 
 }
 
-table tbody tr .input-prepend, table tbody tr select {
-    margin-bottom: 0;
+.inline-label input{
+    margin-left: 10px;
+}
+
+table tbody tr .input-prepend, table tbody tr select, table tbody tr input {
+    margin-bottom: 0 !important;
 }
 
 

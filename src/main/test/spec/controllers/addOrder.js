@@ -39,5 +39,15 @@ describe('Controller: AddorderCtrl', function () {
     scope.removeItem(1);
     expect(scope.order.items.length).toBe(initialItemCount);
   });
+
+  it('Should be able to calculate total of all items', function () {
+    var initialAmount = scope.order.items[0].amount;
+    expect(scope.order.total).toBe(initialAmount);
+    scope.addItem();
+    scope.addItem();
+    scope.calculateTotal();
+    expect(scope.order.total).toBe(initialAmount * scope.order.items.length);
+  });
+
  
 });
