@@ -214,7 +214,11 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 /target
+<<<<<<< HEAD
 /log.*
 /log.roo
 /**/*.roo
 /**/*.aj
+=======
+/log.roo
+>>>>>>> origin/back-end
